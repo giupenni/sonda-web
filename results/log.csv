@@ -1,0 +1,7 @@
+timestamp,profile,page,total,ok,http_fail,conn_fail,max_time_s
+2026-07-22T21:46:30Z,chrome,/en/alcantara-gorges,24,24,0,0,1.20
+2026-07-22T21:46:30Z,chrome,/en/excursions/godfather-tour-messina-port,41,41,0,0,1.68
+2026-07-22T21:46:30Z,chrome,/en/alcantara-river-temperature-august-what-expect-and-why-avoid-peak-hours,29,29,0,0,2.20
+2026-07-22T21:46:30Z,adsbot,/en/alcantara-gorges,24,24,0,0,1.07
+2026-07-22T21:46:30Z,adsbot,/en/excursions/godfather-tour-messina-port,41,41,0,0,1.41
+2026-07-22T21:46:30Z,adsbot,/en/alcantara-river-temperature-august-what-expect-and-why-avoid-peak-hours,29,29,0,0,2.06
