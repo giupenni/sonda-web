@@ -21,7 +21,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Esegui sonda
-        run: bash probe.sh
+        run: |
+          FILE=$(find . -name "probe.sh" -not -path "./.git/*" | head -1)
+          if [ -z "$FILE" ]; then
+            echo "ERRORE: probe.sh non trovato in nessuna cartella del repository"
+            exit 1
+          fi
+          echo "Trovato: $FILE"
+          tr -d '\r' < "$FILE" > /tmp/probe.sh
+          bash /tmp/probe.sh
 
       - name: Salva risultati nel repository
         run: |
