@@ -1,0 +1,36 @@
+name: sonda-adsbot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # ogni 15 minuti (GitHub può ritardare di qualche minuto)
+  workflow_dispatch:          # pulsante per lanciarla a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sonda
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Esegui sonda
+        run: bash probe.sh
+
+      - name: Salva risultati nel repository
+        run: |
+          git config user.name "sonda-bot"
+          git config user.email "sonda@users.noreply.github.com"
+          git add results/
+          if git commit -m "sonda $(date -u +%FT%TZ)"; then
+            git pull --rebase origin main || true
+            git push
+          else
+            echo "Nessun risultato nuovo da salvare"
+          fi
