@@ -15,3 +15,13 @@ timestamp,profile,page,total,ok,http_fail,conn_fail,max_time_s
 2026-07-22T22:17:14Z,adsbot,/en/alcantara-gorges,24,24,0,0,0.81
 2026-07-22T22:17:14Z,adsbot,/en/excursions/godfather-tour-messina-port,41,41,0,0,0.97
 2026-07-22T22:17:14Z,adsbot,/en/alcantara-river-temperature-august-what-expect-and-why-avoid-peak-hours,29,29,0,0,1.86
+2026-07-22T22:39:50Z,chrome,/static-health.txt,1,1,0,0,0.57
+2026-07-22T22:39:50Z,chrome,/php-health.php,1,1,0,0,0.51
+2026-07-22T22:39:50Z,chrome,/en/alcantara-gorges,24,24,0,0,0.85
+2026-07-22T22:39:50Z,chrome,/en/excursions/godfather-tour-messina-port,41,41,0,0,1.10
+2026-07-22T22:39:50Z,chrome,/en/alcantara-river-temperature-august-what-expect-and-why-avoid-peak-hours,29,29,0,0,1.58
+2026-07-22T22:39:50Z,adsbot,/static-health.txt,1,1,0,0,0.30
+2026-07-22T22:39:50Z,adsbot,/php-health.php,1,1,0,0,0.32
+2026-07-22T22:39:50Z,adsbot,/en/alcantara-gorges,24,24,0,0,0.82
+2026-07-22T22:39:50Z,adsbot,/en/excursions/godfather-tour-messina-port,41,41,0,0,0.94
+2026-07-22T22:39:50Z,adsbot,/en/alcantara-river-temperature-august-what-expect-and-why-avoid-peak-hours,29,29,0,0,1.54
